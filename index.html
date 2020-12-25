@@ -1,0 +1,397 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>O-cha</title>
+	<link rel="icon" href="img/favcon-ocha.png" sizes="16x16" type="image/png">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	
+<!--	Boostrap 4-->
+			<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+	
+<body class="nav-bar-open" id="nav-bar-open">
+
+	<div id="wrapper">
+		
+		<!--	Navigaion bar-->
+	<nav class="nav-main" id="nav-main">
+			<div class="top">
+				<div class="top-header">
+					<div class="lang">
+						<span class="link-underline" style="font-size: 14px;">English</span>
+						<svg class="ico-svg">
+							<g id="flag_en" data-size="14 9.334">
+		<path fill="#F0F0F0" d="M0 0h14v9.334H0V0z"></path><path fill="#D80E2A" d="M7.875 0h-1.75v3.792H0v1.75h6.125v3.792h1.75V5.542H14v-1.75H7.875V0z"></path><path fill="#2055A3" d="M10.768 6.29L14 8.086V6.29h-3.232zm-2.247 0L14 9.334v-.861L10.071 6.29h-1.55zm4.02 3.044L8.521 7.1v2.234h4.02z"></path><path fill="#F0F0F0" d="M8.521 6.29L14 9.334v-.861L10.071 6.29h-1.55z"></path><path fill="#D80E2A" d="M8.521 6.29L14 9.334v-.861L10.071 6.29h-1.55z"></path><path fill="#2055A3" d="M2.47 6.29L0 7.663V6.29h2.47zm3.008.387v2.657H.697l4.781-2.657z"></path><path fill="#D80E2A" d="M3.929 6.29L0 8.473v.861L5.478 6.29H3.929z"></path><path fill="#2055A3" d="M3.232 3.043L0 1.248v1.796h3.232zm2.246 0L0 0v.86l3.929 2.183h1.549zM1.459 0l4.019 2.233V0H1.459z"></path><path fill="#F0F0F0" d="M5.478 3.043L0 0v.86l3.929 2.183h1.549z"></path><path fill="#D80E2A" d="M5.478 3.043L0 0v.86l3.929 2.183h1.549z"></path><path fill="#2055A3" d="M11.529 3.043L14 1.671v1.373h-2.471zm-3.008-.387V0h4.781L8.521 2.656z"></path><path fill="#D80E2A" d="M10.071 3.043L14 .86V0L8.521 3.043h1.55z"></path>
+	</g>
+						</svg>
+					</div>
+					<div class="close" onClick="closeNav()">
+						<span class="close-text">CLOSE</span>
+						<div class="x-but"><i class="fas fa-times"></i></div>
+					</div>
+				</div>
+				<div class="menu">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Products</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Blog</a></li>
+					<li><a href="#">Adwards</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">FAQ</a></li>
+				</ul>
+				</div>
+			</div>
+			<div class="bot">
+				<span class="bot-text">Active dark mode</span>
+				<div class="mode-toggle-but">
+					<input id="color-ver" type="checkbox">
+					<label for="color-ver">
+						<span class="ball"></span>
+					</label>
+				</div>
+			</div>
+		</nav>
+		
+<!--		Header-main-->
+			<header id="header">
+				<div class="header-main">
+<!--					Hamburger menu-->
+					<div class="box-left" onClick="openNav()">
+						<div class="item icomenu">
+							<a href="#" style="text-decoration: none; color: rgba(73,73,73,1.00)"><i class="fas fa-bars" style="font-size: 20px"></i>
+						<span style="font-size: 20px" class="menu-text">Menu</span></a>
+						</div>
+					</div>
+<!--					Search and login/register button-->
+					<div class="box-right">
+						<div class="item search">
+							<a href="" id="search"><img src="img/SVG/search.svg" alt="" style="width: 15px;"></a>	
+						</div>
+					
+							<ul class="item social-ico">
+								<li class="item"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+								<li class="item"><a href=""><i class="fab fa-instagram"></i></a></li>
+							</ul>
+								
+							
+						<a href="#" class="item login" onClick="openLogin()">LOGIN</a>
+						
+					</div>
+<!--					Header Logo-->
+					<div class="logo">
+						<a href="index.html" id="logo"><img src="img/SVG/ocha-logo.svg" alt=""></a>
+					</div>
+				</div>
+			</header>
+		<main id="main">
+<!--			Carousel-->
+			<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner">
+				<div class="carousel-item active">
+				  <img class="d-block w-100" src="img/2x/1.png" alt="First slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="img/2x/2.png" alt="Second slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="img/2x/3.png" alt="Third slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="img/2x/4.png" alt="Fouth slide">
+				</div>
+				<div class="carousel-item">
+				  <img class="d-block w-100" src="img/2x/5.png" alt="Fifth slide">
+				</div>
+			  </div>
+			</div>
+			
+<!--			Album-->
+			
+			<div class="album">
+				<div class="container">
+					<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+						<div class="col">
+							<div class="card shadow-sm">		
+								<img src="img/2x/Artboard 1@2x.png" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+								<div class="card-body">
+								  <p class="card-text">Name card</p>
+								  <div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+									  <button type="button" class="btn btn-sm">View</button>
+									</div>
+									<small class="text-muted">10 Oct</small>
+								  </div>
+								</div>
+          					</div>
+						</div>
+						
+						<div class="col">
+							<div class="card shadow-sm">		
+								<img src="img/2x/Artboard 2@2x.png" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+								<div class="card-body">
+								  <p class="card-text">Stationary</p>
+								  <div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+									  <button type="button" class="btn btn-sm">View</button>
+									</div>
+									<small class="text-muted">10 Oct</small>
+								  </div>
+								</div>
+          					</div>
+						</div>
+						
+						<div class="col">
+							<div class="card shadow-sm">		
+								<img src="img/2x/Artboard 3@2x.png" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+								<div class="card-body">
+								  <p class="card-text">Staff ID</p>
+								  <div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+									  <button type="button" class="btn btn-sm">View</button>
+									</div>
+									<small class="text-muted">10 Oct</small>
+								  </div>
+								</div>
+          					</div>
+						</div>
+						
+						<div class="col">
+							<div class="card shadow-sm">		
+								<img src="img/2x/Artboard 4@2x.png" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+								<div class="card-body">
+								  <p class="card-text">Folder</p>
+								  <div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+									  <button type="button" class="btn btn-sm">View</button>
+									</div>
+									<small class="text-muted">10 Oct</small>
+								  </div>
+								</div>
+          					</div>
+						</div>
+						
+						<div class="col">
+							<div class="card shadow-sm">		
+								<img src="img/2x/Artboard 5@2x.png" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+								<div class="card-body">
+								  <p class="card-text">Envelope</p>
+								  <div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+									  <button type="button" class="btn btn-sm">View</button>
+									</div>
+									<small class="text-muted">10 Oct</small>
+								  </div>
+								</div>
+          					</div>
+						</div>
+						
+						<div class="col">
+							<div class="card shadow-sm">		
+								<img src="img/2x/Artboard 6@2x.png" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+								<div class="card-body">
+								  <p class="card-text">Invoice</p>
+								  <div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+									  <button type="button" class="btn btn-sm">View</button>
+									</div>
+									<small class="text-muted">10 Oct</small>
+								  </div>
+								</div>
+          					</div>
+						</div>
+						
+						<div class="col">
+							<div class="card shadow-sm">		
+								<img src="img/2x/Artboard 7@2x.png" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+								<div class="card-body">
+								  <p class="card-text">Uniform</p>
+								  <div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+									  <button type="button" class="btn btn-sm">View</button>
+									</div>
+									<small class="text-muted">10 Oct</small>
+								  </div>
+								</div>
+          					</div>
+						</div>
+						
+						<div class="col">
+							<div class="card shadow-sm">		
+								<img src="img/2x/Artboard 9@2x.png" alt="" class="bd-placeholder-img card-img-top" width="100%" height="225">
+								<div class="card-body">
+								  <p class="card-text">Poster</p>
+								  <div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+									  <button type="button" class="btn btn-sm">View</button>
+									</div>
+									<small class="text-muted">10 Oct</small>
+								  </div>
+								</div>
+          					</div>
+						</div>
+						
+						<div class="col">
+							<div class="card shadow-sm">		
+								<img src="img/2x/Artboard 8@2x.png" alt="" class="bd-placeholder-img card-img-top" width="318" height="225">
+								<div class="card-body">
+								  <p class="card-text">Web App</p>
+								  <div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+									  <button type="button" class="btn btn-sm">View</button>
+									</div>
+									<small class="text-muted">10 Oct</small>
+								  </div>
+								</div>
+          					</div>
+						</div>
+
+					</div> 
+				</div>
+			</div>
+		</main>
+		
+<!--		Footer-->
+		<footer>
+			<div class="container">
+				<div class="bot-left">
+					“O-Cha tạo ra mong muốn đem tới cho cộng đồng một hơi thở tươi trẻ dựa trên những nét đẹp truyền thống mà trà mang lại."  
+				</div>
+				<div class="bot-right">
+				<a href="" onclick="topFunction()" id="btt-but">Back to top</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+<!--	Header reposive-->
+
+	
+<!--	Back top top-->
+	<script>
+//Get the button
+var mybutton = document.getElementById("btt-but");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+	
+<!--	Side bar funtion-->
+	<script>
+		function openNav() {
+  		document.getElementById("nav-main").style.width = "320px";
+  		document.getElementById("nav-bar-open").style.marginLeft = "320px";
+  		document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+		}
+
+		function closeNav() {
+  		document.getElementById("nav-main").style.width = "0";
+  		document.getElementById("nav-bar-open").style.marginLeft= "0";
+  		document.body.style.backgroundColor = "white";
+		}
+	</script>
+	
+<!--	Login Pop-up Funtion-->
+	<script>
+		function openLogin() {
+  		document.getElementById("box-lightbox").style.display = "flex";
+		}
+
+		function closeLogin() {
+  		document.getElementById("box-lightbox").style.display = "none";
+		}
+	</script>
+	
+<!--	Login/register pop-up-->
+	<div class="box-lightbox" id="box-lightbox">
+		<div class="bt-close" onClick="closeLogin()">
+			<i class="fas fa-times"></i>
+		</div>
+		<div class="content-login-box">
+			<div class="login-box">
+				<div class="section-box">
+					<div class="header-box">
+						<div class="header-box-left">
+							<h5>Sign in to continue</h5>
+						</div>
+						<div class="header-box-right">
+							<h5>Not a member yet?
+							<strong class="green-text">Register now!</strong>
+							</h5>	
+						</div>
+					</div>
+					<form action="/login" method="post" novalidate>
+						<ul class="fill-info">
+							<li>
+								<input type="text" class="text-input" placeholder="Email or Username">
+							</li>
+							<li>
+								<input type="password" class="text-input" placeholder="Password">
+							</li>
+							<li class="input-check">
+								<label for="check">
+									<input type="checkbox" id="check">
+									<span class="checkmark"></span>
+									<span style="font-weight: 100; font-size: 14px;color: rgba(138,138,138,1.00);">Keep me login</span>
+								</label>
+							</li>
+						</ul>
+						<button type="submit" class="login-but">
+							<span>Login now</span>
+						</button>
+					</form>
+					
+				</div>
+				<div class="section-box">
+					<div class="header-box">
+						<h5>Or sign in with</h5>
+					</div>
+					<div class="but-social">
+						<a href="" class="bt-connect google">
+							<i class="fab fa-google"></i>
+							<span style="margin-left: 10px">Google</span>
+						</a>
+						<a href="" class="bt-connect twitter">
+							<i class="fab fa-twitter"></i>
+							<span style="margin-left: 10px">Twitter</span>
+						</a>
+						<a href="" class="bt-connect facebook">
+							<i class="fab fa-facebook-f"></i>
+							<span style="margin-left: 10px">Facebook</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
